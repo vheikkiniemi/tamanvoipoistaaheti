@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Oma nimi">
+  <title>Web-kehityksen harjoitukset – Oma nimi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Basics of Web Development</p>
+      <h1>Omat web-kehityksen harjoitukseni</h1>
+      <p>
+        Olen Oma nimi. Tälle sivulle olen koonnut kurssilla
+        tekemäni harjoitukset.
+      </p>
+
+      <nav aria-label="Harjoitusosiot">
+        <a href="#s-tehtavat">S-tehtävät</a>
+        <a href="#a-tehtavat">A-tehtävät</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="s-tehtavat" aria-labelledby="s-otsikko">
+      <h2 id="s-otsikko">S-tehtävät</h2>
+      <p>Tuntiharjoitukset ja niissä harjoitellut taidot.</p>
+
+      <div class="card-grid">
+        <!-- Lisää tähän kortti jokaisesta tekemästäsi S-tehtävästä. -->
+        <article class="card">
+          <p class="task-id">S3</p>
+          <h3>Verkkosivun julkaiseminen</h3>
+          <p>Harjoittelin sivun julkaisemista GitHub Pagesissa.</p>
+          <a class="card-link" href="s3/index.html">Avaa S3</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="a-tehtavat" aria-labelledby="a-otsikko">
+      <h2 id="a-otsikko">A-tehtävät</h2>
+      <p>Arvioitavat tehtävät ja niissä osoitettu osaaminen.</p>
+
+      <div class="card-grid">
+        <!-- Lisää tähän kortti jokaisesta tekemästäsi A-tehtävästä. -->
+        <article class="card">
+          <p class="task-id">A1</p>
+          <h3>HTML-rakenteen korjaaminen</h3>
+          <p>
+            Korjasin HTML-virheet ja erotin tyylit omaan
+            CSS-tiedostoonsa.
+          </p>
+          <a class="card-link" href="a1/index.html">Avaa A1</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Original template: OpenAI / ChatGPT</p>
+      <p>Modified by: Oma nimi</p>
+    </div>
+  </footer>
+</body>
+</html>
