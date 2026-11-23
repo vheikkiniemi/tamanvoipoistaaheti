@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lomakkeesta taulukkoon</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>Lomakkeesta taulukkoon</h1>
+    <form id="lomake">
+      <label for="teksti">Text</label>
+      <input type="text" id="teksti" name="teksti" required>
+
+      <label for="maara">Quantity</label>
+      <input type="number" id="maara" name="maara" required>
+
+      <button type="submit">Add row</button>
+    </form>
+
+    <table>
+      <thead>
+      <tr>
+        <th scope="col" data-field="maara">Month</th>
+        <th scope="col" data-field="teksti">Savings</th>
+      </tr>
+      </thead>
+      <tbody id="rivit"></tbody>
+      <!--<thead>
+        <tr>
+          <th scope="col" data-field="maara">Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="rivit"></tbody>-->
+    </table>
+    <p>Rivit säilyvät sivulla, kunnes sivu ladataan uudelleen.</p>
+  </main>
+</body>
+
+</html>
