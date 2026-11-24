@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Form to Table</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>From Form to Table</h1>
+    <p>Enter an item and its quantity, then select Add row.</p>
+
+    <form id="entry-form">
+      <label for="item">Item</label>
+      <input type="text" id="item" name="item" required>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" step="1" required>
+
+      <button type="submit">Add row</button>
+    </form>
+
+    <table>
+      <caption>Added items</caption>
+      <thead>
+        <tr>
+          <!-- Match data-field to the input's name. Reorder headings to reorder columns. -->
+          <th scope="col" data-field="quantity">Quantity</th>
+          <th scope="col" data-field="item">Item</th>
+        </tr>
+      </thead>
+      <tbody id="table-rows"></tbody>
+    </table>
+
+    <p>Rows are cleared when you reload the page.</p>
+  </main>
+</body>
+</html>
